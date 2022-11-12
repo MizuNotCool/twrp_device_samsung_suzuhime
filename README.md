@@ -1,4 +1,4 @@
-TWRP configuration for Samsung Galaxy A10s (a10s)
+TWRP configuration for Samsung Galaxy A10s (suzuhime)
 ================================================================
  
 Basic   | Spec Sheet
