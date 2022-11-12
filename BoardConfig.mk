@@ -16,7 +16,7 @@
 #
 
 # Device Tree Path
-DEVICE_PATH := device/samsung/a10s
+DEVICE_PATH := device/samsung/suzuhime
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -43,7 +43,7 @@ ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := a10s,a10sxx
+TARGET_OTA_ASSERT_DEVICE := suzuhime,a10s,a10sxx
 
 # Bootloader
 TARGET_SOC := mt6765
@@ -82,12 +82,12 @@ BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 BOARD_MKBOOTIMG_ARGS += --recovery_dtbo $(BOARD_PREBUILT_DTBOIMAGE)
-BOARD_CUSTOM_BOOTIMG_MK := device/samsung/a10s/bootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/samsung/suzuhime/bootimg.mk
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
 # TARGET_KERNEL_HEADER_ARCH := arm64
-# TARGET_KERNEL_SOURCE := kernel/samsung/a10s
-# TARGET_KERNEL_CONFIG := a10s_defconfig
+# TARGET_KERNEL_SOURCE := kernel/samsung/suzuhime-krnl
+# TARGET_KERNEL_CONFIG := suzu_defconfig
 
 # System as root
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
